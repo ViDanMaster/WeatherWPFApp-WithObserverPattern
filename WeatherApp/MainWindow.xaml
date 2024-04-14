@@ -1,0 +1,15 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="WeatherApp.MainWindow"
+        Title="Weather App"
+        Height="550" Width="800">
+    <Grid x:Name="mainGrid" Background="#F0F0F0">
+        <ListBox x:Name="citySuggestionsListBox" Width="380" VerticalAlignment="Top" HorizontalAlignment="Center" Height="160" Margin="0,46,0,0" BorderThickness="1,0,1,1" SelectionChanged="CitySuggestionsListBox_SelectionChanged" Background="#FFF" Foreground="#333" BorderBrush="#CCC" FontFamily="Segoe UI" FontSize="14">
+        </ListBox>
+        <TextBox x:Name="cityTextBox" Width="380" TextChanged="CityTextBox_TextChanged" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,15,0,0" BorderThickness="1,1,1,1" Background="#FFF" Foreground="#333" BorderBrush="#CCC" FontFamily="Segoe UI" FontSize="14" Padding="5" />
+        <Button x:Name="updateButton" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,226,0,0" Click="UpdateButton_ClickAsync" Height="41" Width="136" Background="#4CAF50" Foreground="#FFF" FontFamily="Segoe UI" FontSize="14" Padding="10" />
+        <Label x:Name="temperatureLabel" HorizontalAlignment="Center" VerticalAlignment="Top" Height="44" Width="208" Margin="0,314,0,0" Foreground="#333" FontFamily="Segoe UI" FontSize="16" />
+        <Label x:Name="humidityLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="208" Margin="24,314,0,0" Foreground="#333" FontFamily="Segoe UI" FontSize="16" />
+        <Label x:Name="pressureLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="582,314,0,0" Height="44" Width="208" RenderTransformOrigin="0.5,0.5" Foreground="#333" FontFamily="Segoe UI" FontSize="16" />
+    </Grid>
+</Window>
